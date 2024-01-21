@@ -6,6 +6,7 @@ using Common.Http;
 using Common.Service;
 using Conversion;
 using Dynastream.Fit;
+using FluentAssertions;
 using Flurl;
 using Flurl.Http;
 using Flurl.Http.Configuration;
@@ -22,6 +23,7 @@ using Serilog;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Security.Cryptography;
 using System.Text.Json;
@@ -144,30 +146,56 @@ namespace UnitTests
 		//	var workout = _fileHandler.DeserializeJson<RecentWorkouts>(file);
 		//}
 
-		//[Test]
-		//public async Task Convert_From_File()
-		//{
-		//	var file = Path.Join(DataDirectory, "631fe107823048708d4c9f18a2888c6e_workout.json");
-		//	//var file = Path.Join(DataDirectory, "cycling_target_metrics.json");
-		//	//var file = Path.Join(DataDirectory, "tread_run_workout.json");
+		[Test]
+		public async Task Convert_From_File()
+		{
+			var file = Path.Join(DataDirectory, "rower_workout_2024.json");
+			//var file = Path.Join(DataDirectory, "cycling_target_metrics.json");
+			//var file = Path.Join(DataDirectory, "tread_run_workout.json");
 
-		//	var autoMocker = new AutoMocker();
-		//	var settingsService = autoMocker.GetMock<SettingsService>();
+			var autoMocker = new AutoMocker();
+			var settingsService = autoMocker.GetMock<SettingsService>();
 
-		//	var settings = new Settings()
-		//	{
-		//	};
-		//	var fileHandler = new IOWrapper();
+			var settings = new Settings();
+			settings.Peloton.ExcludeWorkoutTypes.Add(WorkoutType.Rowing);
+			var fileHandler = new IOWrapper();
 
-		//	settingsService.SetReturnsDefault(settings);
+			settingsService.SetReturnsDefault(settings);
 
-		//	var fitConverter = new ConverterInstance(settingsService.Object, fileHandler);
-		//	var messages = await fitConverter.Convert(file, settings);
+			var fitConverter = new ConverterInstance(settingsService.Object, fileHandler);
+			var messages = await fitConverter.Convert(file, settings);
 
-		//	var output = Path.Join(DataDirectory, "output.fit");
+			var output = Path.Join(DataDirectory, "output.fit");
 
-		//	fitConverter.Save(messages, output);
-		//}
+			fitConverter.Save(messages, output);
+		}
+
+		[Test]
+		public async Task AA()
+		{
+			var file = Path.Join(DataDirectory, "rower_workout_2024.json");
+			var content = System.IO.File.ReadAllText(file);
+			var workout = JsonSerializer.Deserialize<Workout>(System.IO.File.ReadAllBytes(file), new JsonSerializerOptions() { PropertyNameCaseInsensitive = true, WriteIndented = true });
+
+			var workouts = new List<P2GWorkout>() { new P2GWorkout() { Workout = workout } };
+
+			ICollection<WorkoutType> exclude = new List<WorkoutType>() { WorkoutType.Rowing, WorkoutType.BikeBootcamp, WorkoutType.Yoga };
+			var filteredWorkouts = workouts.Where(w =>
+			{
+				if (w is null) return false;
+
+				if (exclude is null || exclude.Count == 0) return true;
+
+				if (exclude.Contains(w.WorkoutType))
+				{
+					return false;
+				}
+
+				return true;
+			});
+
+			filteredWorkouts.Should().BeEmpty();
+		}
 
 		private void SaveRawData(dynamic data, string workoutId, string path)
 		{

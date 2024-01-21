@@ -1,0 +1,232 @@
+{
+  "created_at": 1705631276,
+  "device_type": "apple_tv",
+  "end_time": 1705633315,
+  "fitness_discipline": "caesar",
+  "has_pedaling_metrics": false,
+  "has_leaderboard_metrics": false,
+  "id": "2ea0c9d95e324483b1ea14332368da2e",
+  "is_total_work_personal_record": false,
+  "is_outdoor": false,
+  "metrics_type": null,
+  "name": "Rowing Workout",
+  "peloton_id": "392f7ff680994d9ebe2e994170e4085a",
+  "platform": "apple_tv",
+  "start_time": 1705631336,
+  "status": "COMPLETE",
+  "timezone": "US/Pacific",
+  "title": null,
+  "total_work": 0.0,
+  "user_id": "adebbc37050d4f439c4bhjklb03dcecc454d",
+  "workout_type": "class",
+  "total_video_watch_time_seconds": 0,
+  "total_video_buffering_seconds": 0,
+  "v2_total_video_watch_time_seconds": 1980,
+  "v2_total_video_buffering_seconds": 0,
+  "total_music_audio_play_seconds": null,
+  "total_music_audio_buffer_seconds": null,
+  "service_id": null,
+  "created": 1705631276,
+  "device_time_created_at": 1705602475,
+  "strava_id": null,
+  "fitbit_id": null,
+  "is_skip_intro_available": false,
+  "pause_time_remaining": null,
+  "pause_time_elapsed": null,
+  "is_paused": false,
+  "has_paused": false,
+  "is_pause_available": false,
+  "ride": {
+    "content_availability": "digital_and_above",
+    "content_availability_level": "digital_and_above",
+    "free_for_limited_time": false,
+    "is_limited_ride": false,
+    "availability": {
+      "is_available": true,
+      "reason": null
+    },
+    "class_type_ids": [
+      "120f8778e5a04f8da5b7e2eb02a8dce7"
+    ],
+    "content_provider": "peloton",
+    "content_format": "video",
+    "description": "Time to celebrate a year of milestones with the incredible music that kept us going in Peloton\u2019s Top 50 Music Countdown series. From epic, new releases to classic, fan favorites, we\u2019re counting down 2023's Top 50 most-loved Peloton songs.",
+    "difficulty_estimate": 7.073604060913706,
+    "overall_estimate": 0.9950248756218906,
+    "difficulty_rating_avg": 7.073604060913706,
+    "difficulty_rating_count": 394,
+    "difficulty_level": null,
+    "duration": 1800,
+    "equipment_ids": [
+    ],
+    "equipment_tags": [
+    ],
+    "explicit_rating": 1,
+    "extra_images": [
+    ],
+    "fitness_discipline": "caesar",
+    "fitness_discipline_display_name": "Rowing",
+    "has_closed_captions": true,
+    "has_pedaling_metrics": false,
+    "home_peloton_id": "7f20c615a017456ba3544a01a54eacbf",
+    "id": "245dd85183f949d09015d99f926c9350",
+    "image_url": "https://s3.amazonaws.com/peloton-ride-images/13dae801cc31e3471179ad9eaf4de97bcdb8c9cf/img_1702561818_8e1e8fab53c9490b968cb6eecf01d6d6.png",
+    "instructor_id": "15f01c9145de4d21b58c1a3e4e44a486",
+    "individual_instructor_ids": [
+    ],
+    "is_archived": true,
+    "is_closed_caption_shown": true,
+    "is_explicit": true,
+    "has_free_mode": false,
+    "is_live_in_studio_only": true,
+    "language": "english",
+    "origin_locale": "en-US",
+    "length": 1980,
+    "live_stream_id": "245dd85183f949d09015d99f926c9350-live",
+    "live_stream_url": null,
+    "location": "psny-studio-3",
+    "metrics": [
+      "heart_rate",
+      "calories"
+    ],
+    "original_air_time": 1703944800,
+    "overall_rating_avg": 0.9950248756218906,
+    "overall_rating_count": 402,
+    "pedaling_start_offset": 60,
+    "pedaling_end_offset": 1860,
+    "pedaling_duration": 1800,
+    "rating": 0,
+    "ride_type_id": "120f8778e5a04f8da5b7e2eb02a8dce7",
+    "ride_type_ids": [
+      "120f8778e5a04f8da5b7e2eb02a8dce7"
+    ],
+    "sample_vod_stream_url": null,
+    "sample_preview_stream_url": null,
+    "scheduled_start_time": 1703944800,
+    "series_id": "93dd87be16a9421492ac43ae106876c4",
+    "sold_out": false,
+    "studio_peloton_id": "df339358243f4f54bce13e504138775a",
+    "title": "30 min Top 50 Music Row: #10-1",
+    "total_ratings": 2012,
+    "total_in_progress_workouts": 1,
+    "total_workouts": 1000,
+    "vod_stream_url": null,
+    "vod_stream_id": "245dd85183f949d09015d99f926c9350-vod",
+    "captions": [
+      "de-DE",
+      "en-US",
+      "es-ES"
+    ],
+    "user_caption_locales": [
+    ],
+    "join_tokens": {
+      "on_demand": "eyJob21lX3BlbG90b25faWQiOiBudWxsLCAicmlkZV9pZCI6ICIyNDVkZDg1MTgzZjk0OWQwOTAxNWQ5OWY5MjZjOTM1MCIsICJzdHVkaW9fcGVsb3Rvbl9pZCI6IG51bGwsICJ0eXBlIjogIm9uX2RlbWFuZCJ9"
+    },
+    "flags": [
+    ],
+    "is_dynamic_video_eligible": false,
+    "is_fixed_distance": false,
+    "dynamic_video_recorded_speed_in_mph": 0.0,
+    "thumbnail_title": null,
+    "thumbnail_location": null,
+    "distance": null,
+    "distance_unit": null,
+    "distance_display_value": null,
+    "is_outdoor": false,
+    "excluded_platforms": [
+    ],
+    "class_avg_follow_along_score": 0.0,
+    "muscle_group_score": [
+      {
+        "muscle_group": "biceps",
+        "score": 1725.0,
+        "percentage": 4,
+        "bucket": 1,
+        "display_name": "Biceps"
+      },
+      {
+        "muscle_group": "core",
+        "score": 3450.0,
+        "percentage": 9,
+        "bucket": 2,
+        "display_name": "Core"
+      },
+      {
+        "muscle_group": "glutes",
+        "score": 5175.0,
+        "percentage": 13,
+        "bucket": 3,
+        "display_name": "Glutes"
+      },
+      {
+        "muscle_group": "hamstrings",
+        "score": 5175.0,
+        "percentage": 13,
+        "bucket": 3,
+        "display_name": "Hamstrings"
+      },
+      {
+        "muscle_group": "hips",
+        "score": 3450.0,
+        "percentage": 9,
+        "bucket": 2,
+        "display_name": "Hips"
+      },
+      {
+        "muscle_group": "lats",
+        "score": 3450.0,
+        "percentage": 9,
+        "bucket": 2,
+        "display_name": "Lats"
+      },
+      {
+        "muscle_group": "low_back",
+        "score": 3450.0,
+        "percentage": 9,
+        "bucket": 2,
+        "display_name": "Low Back"
+      },
+      {
+        "muscle_group": "mid_back",
+        "score": 3450.0,
+        "percentage": 9,
+        "bucket": 2,
+        "display_name": "Mid Back"
+      },
+      {
+        "muscle_group": "obliques",
+        "score": 3450.0,
+        "percentage": 8,
+        "bucket": 2,
+        "display_name": "Obliques"
+      },
+      {
+        "muscle_group": "quads",
+        "score": 5175.0,
+        "percentage": 13,
+        "bucket": 3,
+        "display_name": "Quads"
+      },
+      {
+        "muscle_group": "triceps",
+        "score": 1725.0,
+        "percentage": 4,
+        "bucket": 1,
+        "display_name": "Triceps"
+      }
+    ]
+  },
+  "total_heart_rate_zone_durations": null,
+  "average_effort_score": null,
+  "achievement_templates": [
+  ],
+  "leaderboard_rank": null,
+  "total_leaderboard_users": 0,
+  "ftp_info": {
+    "ftp": 0,
+    "ftp_source": null,
+    "ftp_workout_id": null
+  },
+  "device_type_display_name": "App",
+  "is_3p_digital_workout": false
+}
